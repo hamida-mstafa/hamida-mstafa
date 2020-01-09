@@ -16,7 +16,7 @@ import {
     @Input('text') text = '';
     @Input('time') time = 1000;
     @Input('delay') delay = 500;
-    @ViewChild('cursor') cursorRef: ElementRef;
+    @ViewChild('cursor', { static: true }) cursorRef: ElementRef;
   
     displayText = '';
     isProcessRunning = false;
